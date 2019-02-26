@@ -47,6 +47,10 @@ public class LameUtil {
 	public native static int encode(short[] bufferLeft, short[] bufferRight,
 			int samples, byte[] mp3buf);
 
+	/**
+	 * @param in  双声道pcm文件
+	 * @param out 转换后的mp3文件
+	 */
 	public native static int encodeFile(String in, String out);
 	/**
 	 * Flush LAME buffer.
